@@ -45,6 +45,8 @@ span{
     
 }
 
+
+
 .login::after{
     content: "";
     position: absolute;
@@ -54,6 +56,24 @@ span{
     opacity: 0.05;
     pointer-events: none;
     z-index: 2;
+}
+
+.descricao-cad h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.descricao-log h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    font-size: 18px;
+    text-align: center;
 }
 
 
@@ -69,7 +89,7 @@ span{
     background: radial-gradient(circle at top center, #3b0ca3 0%, #120a25 80%);
     background-size: cover;
     color: #fff;
-    padding: 2rem;
+    padding: 2rem;  
 }
 
 .cadastro::after{
