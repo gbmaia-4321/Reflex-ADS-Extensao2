@@ -1,48 +1,83 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <link rel="stylesheet" href="/src/style.css">
 
+    <link rel="stylesheet" href="/src/style.css">
     
-    <title>login</title>
-</head>
-<body>
 
-    <h1 id="reflex">Reflex <span>ADS</span></h1>
+    <title>Cadastro Reflex ADS</title>
+ </head>
+ <body>
+
+     <h1 id="reflex">Reflex <span id="ads">ADS</span></h1>
 
     <section class="seccadastro">
         <div class="containerCadastroLog">
-            <div id="login" class="login">
-                <h2>login</h2>
-
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email">
-                <br><br>
-
-                <label for="senha">Senha</label><br>
-                <input type="password" id="password" name="password">
-                <br><br>
-
-                <button id="confirmlogin" class="cinfirmlogin">login</button>
+            <div id="cadastro" class="cadastro">
+                <h2>Cadastro</h2>
+                
+                <div class="form-group">
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" name="name" class="form" placeholder="Digite seu nome completo">
+                </div>
+                
+                <div class="form-group">
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" name="idade" class="form" placeholder="Digite sua idade" min="1" max="120">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form" placeholder="seu.email@exemplo.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="tel" id="tel" class="form" placeholder="(00) 00000-0000">
+                </div>
+                
+                <div class="form-group">
+                    <label for="user">Nome de usuário</label>
+                    <input type="text" name="user" id="user" class="form" placeholder="Escolha um nome de usuário">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" class="form" placeholder="Crie uma senha segura">
+                    <div class="password-strength">
+                        <div class="strength-meter" id="strength-meter"></div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirme sua senha</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" class="form" placeholder="Digite novamente sua senha">
+                    <div class="password-match" id="password-match"></div>
+                </div>
+                
+                <div class="button-container">
+                    <button id="buttonregister" class="buttonregister">Finalizar Cadastro</button>
+                    <button id="buttonlogin" class="buttonlogin">Login</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="descricao-log" class="descricao-log">
-
+   
+    <section id="descricao-cad" class="descricao-cad">
+       
      <h2>Um espaço para explorar tecnologia, matemática e ciência da computação de forma prática e interativa. Aqui você encontra materiais, exercícios e simuladores pensados para apoiar sua jornada.</h2>
 
-
     </section>
+
 
 
     <section id="cardsinfo" class="cardsinfo">
 
         <div id="logicaProg" class="logicaProg">
-            <h2> &lt/&gt </h2>
+           <h2><strong>&lt/&gt</strong></h2>
             <h3>Lógica de programação</h3>
             <p>Algoritmos, estruturas de controle, funções e resolução de problemas através da programação visual e interativa.</p>
         
@@ -53,7 +88,7 @@
             </ul>
         </div>
 
-         <div id="matematica" class="matematica">
+        <div id="matematica" class="matematica">
             <img src="/src/img/fiveicon_calculadora.png" alt="Icone de calculadora" style="width: 58px; height: 58px;">
             <h3>Matemática</h3>
             <p>Conceitos matemáticos aplicados à computação, com visualizações gráficas e simuladores interativos</p>
@@ -83,7 +118,7 @@
 
 
 
-    <footer class="rodape">
+   <footer class="rodape">
         <div class="container">
             <div class="rodape-conteudo">
                 <div class="rodape-coluna">
@@ -110,5 +145,5 @@
 
 
     
-</body>
-</html>
+ </body>
+ </html>
