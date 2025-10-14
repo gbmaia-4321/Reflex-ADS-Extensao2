@@ -1,123 +1,160 @@
- <!DOCTYPE html>
- <html lang="pt-br">
- <head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/src/style.css">
+    <title>Reflex ADS - Transformando o Ensino Médio</title>
+    <link rel="stylesheet" href="/src/index.css">
+</head>
+<body>
     
+    <header class="cabecalho">
+        <nav class="container-navegacao">
+            <div class="conteudo-navegacao">
+                <div class="logo">Reflex ADS</div>
+                <ul class="menu-navegacao">
+                    <li><a href="index.html" class="ativo">Início</a></li>
+                    <li><a href="conteudos.html">Conteúdos</a></li>
+                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <title>Cadastro Reflex ADS</title>
- </head>
- <body>
+    
+    <section class="heroi">
+        <div class="conteudo-heroi">
+            <h1 class="titulo-heroi">
+                Transformando o <span class="destaque">Ensino Médio</span>
+            </h1>
+            <p class="descricao-heroi">
+                Plataforma colaborativa onde alunos de ADS criam conteúdos interativos de <strong>lógica de programação, matemática e ciências da computação</strong> para escolas públicas
+            </p>
 
-     <h1 id="reflex">Reflex <span id="ads">ADS</span></h1>
+            <a href="conteudos.html">
+            <button class="botao-heroi">Explorar Conteúdos</button></a>
+        </div>
+    </section>
 
-    <section class="seccadastro">
-        <div class="containerCadastroLog">
-            <div id="cadastro" class="cadastro">
-                <h2>Cadastro</h2>
-                
-                <div class="form-group">
-                    <label for="name">Nome completo</label>
-                    <input type="text" id="name" name="name" class="form" placeholder="Digite seu nome completo">
+     
+    <section class="secao-estatisticas">
+        <div class="container-estatisticas">
+            <div class="grade-estatisticas">
+                <div class="item-estatistica">
+                    <div class="numero-estatistica azul">500+</div>
+                    <p class="rotulo-estatistica">Exercícios Interativos</p>
                 </div>
-                
-                <div class="form-group">
-                    <label for="idade">Idade</label>
-                    <input type="number" id="idade" name="idade" class="form" placeholder="Digite sua idade" min="1" max="120">
+                <div class="item-estatistica">
+                    <div class="numero-estatistica azul">50+</div>
+                    <p class="rotulo-estatistica">Escolas Atendidas</p>
                 </div>
-                
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form" placeholder="seu.email@exemplo.com">
+                <div class="item-estatistica">
+                    <div class="numero-estatistica verde">1000+</div>
+                    <p class="rotulo-estatistica">Alunos beneficiados</p>
                 </div>
-                
-                <div class="form-group">
-                    <label for="tel">Telefone</label>
-                    <input type="tel" name="tel" id="tel" class="form" placeholder="(00) 00000-0000">
-                </div>
-                
-                <div class="form-group">
-                    <label for="user">Nome de usuário</label>
-                    <input type="text" name="user" id="user" class="form" placeholder="Escolha um nome de usuário">
-                </div>
-                
-                <div class="form-group">
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" id="password" class="form" placeholder="Crie uma senha segura">
-                    <div class="password-strength">
-                        <div class="strength-meter" id="strength-meter"></div>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="confirmPassword">Confirme sua senha</label>
-                    <input type="password" name="confirmPassword" id="confirmPassword" class="form" placeholder="Digite novamente sua senha">
-                    <div class="password-match" id="password-match"></div>
-                </div>
-                
-                <div class="button-container">
-                    <button id="buttonregister" class="buttonregister">Finalizar Cadastro</button>
-                    <button id="buttonlogin" class="buttonlogin">Login</button>
+                <div class="item-estatistica">
+                    <div class="numero-estatistica laranja">30+</div>
+                    <p class="rotulo-estatistica">Colaboradores ADS</p>
                 </div>
             </div>
         </div>
     </section>
 
    
-    <section id="descricao-cad" class="descricao-cad">
-       
-     <h2>Um espaço para explorar tecnologia, matemática e ciência da computação de forma prática e interativa. Aqui você encontra materiais, exercícios e simuladores pensados para apoiar sua jornada.</h2>
+    <section class="secao-conhecimento">
+        <div class="container">
+            <h2 class="titulo-secao">Áreas de Conhecimento</h2>
+            <p class="subtitulo-secao">
+                Conteúdos desenvolvidos por estudantes, para estudantes, com foco na aprendizagem prática e interativa
+            </p>
+            
+            <div class="grade-cartoes">
+                 
+                <div class="cartao">
+                    <div class="icone-cartao">💻</div>
+                    <h3 class="titulo-cartao">Lógica de Programação</h3>
+                    <p class="descricao-cartao">
+                        Algoritmos, estruturas de controle, funções e introdução à resolução de problemas através da programação
+                    </p>
+                    <ul class="lista-cartao">
+                        <li>• Fundamentos Algoritmos</li>
+                        <li>• Estruturas de Dados</li>
+                        <li>• Resolução de Problemas</li>
+                    </ul>
+                    <button class="botao-primario">Explorar Conteúdos</button>
+                </div>
 
+                <div class="cartao">
+                    <div class="icone-cartao">📊</div>
+                    <h3 class="titulo-cartao">Matemática</h3>
+                    <p class="descricao-cartao">
+                        Conceitos matemáticos aplicados à computação, com visualizações gráficas e exercícios interativos
+                    </p>
+                    <ul class="lista-cartao">
+                        <li>• Álgebra Linear</li>
+                        <li>• Matemática Discreta</li>
+                        <li>• Estatística</li>
+                    </ul>
+
+                    
+                    <button class="botao-primario">Explorar Conteúdos</button>
+                </div>
+
+                <div class="cartao">
+                    <div class="icone-cartao">🖥️</div>
+                    <h3 class="titulo-cartao">Ciências da Computação</h3>
+                    <p class="descricao-cartao">
+                        Fundamentos teóricos e práticos da computação, estruturas de dados e análise de algoritmos
+                    </p>
+                    <ul class="lista-cartao">
+                        <li>• Estruturas de Dados</li>
+                        <li>• Redes de Computadores</li>
+                        <li>• Banco de Dados</li>
+                    </ul>
+                    <button class="botao-primario">Explorar Conteúdos</button>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <section class="secao-recursos">
+        <div class="container">
+            <h2 class="titulo-secao">Recursos Interativos</h2>
+            
+            <div class="grade-cartoes">
+                <div class="cartao-recurso">
+                    <div class="icone-recurso">📝</div>
+                    <h3 class="titulo-recurso">Quizzes</h3>
+                    <p class="descricao-recurso">
+                        Testes interativos para avaliar seu conhecimento
+                    </p>
+                    <button class="botao-link">Acessar</button>
+                </div>
 
+                <div class="cartao-recurso">
+                    <div class="icone-recurso">📄</div>
+                    <h3 class="titulo-recurso">Exercícios Práticos</h3>
+                    <p class="descricao-recurso">
+                        Atividades mão na massa para fixar o aprendizado
+                    </p>
+                    <button class="botao-link">Acessar</button>
+                </div>
 
-    <section id="cardsinfo" class="cardsinfo">
-
-        <div id="logicaProg" class="logicaProg">
-           <h2><strong>&lt/&gt</strong></h2>
-            <h3>Lógica de programação</h3>
-            <p>Algoritmos, estruturas de controle, funções e resolução de problemas através da programação visual e interativa.</p>
-        
-            <ul>
-                <li>Fluxogramas Interativos</li>
-                <li>Pseudocódigo Visual</li>
-                <li>Exercícios Práticos</li>
-            </ul>
+                <div class="cartao-recurso">
+                    <div class="icone-recurso">🎥</div>
+                    <h3 class="titulo-recurso">Conteúdos</h3>
+                    <p class="descricao-recurso">
+                        Videoaulas explicativas e demonstrações práticas
+                    </p>
+                    <button class="botao-link">Acessar</button>
+                </div>
+            </div>
         </div>
-
-        <div id="matematica" class="matematica">
-            <img src="/src/img/fiveicon_calculadora.png" alt="Icone de calculadora" style="width: 58px; height: 58px;">
-            <h3>Matemática</h3>
-            <p>Conceitos matemáticos aplicados à computação, com visualizações gráficas e simuladores interativos</p>
-        
-            <ul>
-                <li>Álgebra Linesr</li>
-                <li>Estatística</li>
-                <li>Matematica Discreta</li>
-            </ul>
-        </div>
-
-        <div id="cienciasComput" class="cienciasComput">
-            <img src="/src/img/cienciasComput.png" alt="Ciencia da computação" style="width: 58px; height: 58px;">
-
-            <h3>Ciências da Computação</h3>
-            <p>Fundamentos teóricos e práticos da computação, estruturas de dados e análise de algoritmos.</p>      
-
-            <ul>
-                <li>Estrutura de Dados</li>
-                <li>Complexidade</li>
-                <li>Teoria da computação</li>
-            </ul>
-
-        </div>
-
     </section>
 
-
-
+    
    <footer class="rodape">
         <div class="container">
             <div class="rodape-conteudo">
@@ -141,9 +178,5 @@
             </div>
         </div>
     </footer>
-
-
-
-    
- </body>
- </html>
+</body>
+</html>

@@ -1,68 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reflex ADS - Transformando o Ensino Médio</title>
-    <link rel="stylesheet" href="/src/inicio.css">
-</head>
-<body>
-    
-    <header class="cabecalho">
-        <nav class="container-navegacao">
-            <div class="conteudo-navegacao">
-                <div class="logo">Reflex ADS</div>
-                <ul class="menu-navegacao">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Conteúdos</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    
-    <section class="heroi">
-        <div class="conteudo-heroi">
-            <h1 class="titulo-heroi">
-                Transformando o <span class="destaque">Ensino Médio</span>
-            </h1>
-            <p class="descricao-heroi">
-                Plataforma colaborativa onde alunos de ADS criam conteúdos interativos de <strong>lógica de programação, matemática e ciências da computação</strong> para escolas públicas
-            </p>
-
-            <a href="conteudos.html">
-            <button class="botao-heroi">Explorar Conteúdos</button></a>
-        </div>
-    </section>
-
-     
-    <section class="secao-estatisticas">
-        <div class="container-estatisticas">
-            <div class="grade-estatisticas">
-                <div class="item-estatistica">
-                    <div class="numero-estatistica azul">500+</div>
-                    <p class="rotulo-estatistica">Exercícios Interativos</p>
-                </div>
-                <div class="item-estatistica">
-                    <div class="numero-estatistica azul">50+</div>
-                    <p class="rotulo-estatistica">Escolas Atendidas</p>
-                </div>
-                <div class="item-estatistica">
-                    <div class="numero-estatistica verde">1000+</div>
-                    <p class="rotulo-estatistica">Alunos beneficiados</p>
-                </div>
-                <div class="item-estatistica">
-                    <div class="numero-estatistica laranja">30+</div>
-                    <p class="rotulo-estatistica">Colaboradores ADS</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <link rel="stylesheet" href="/src/quizzes.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Quizzes - ReflexADS</title>
 
    
+    <header class="cabecalho">
+        <div class="container">
+            <div class="cabecalho-conteudo">
+                <div class="logo">Reflex ADS</div>
+                <nav class="navegacao">
+                    <a href="index.html">Início</a>
+                    <a href="conteudos.html">Conteúdos</a>
+                    <a href="quizzes.html" class="ativo">Quizzes</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="heroi">
+        <div class="container">
+            <h1 class="heroi-titulo">Explorar <span class="destaque-amarelo">Conteúdos</span></h1>
+            <p class="heroi-subtitulo">
+                Descubra materiais educacionais criados pelos alunos de ADS para apoiar seu aprendizado em <strong>lógica de programação, matemática e ciências da computação</strong>.
+            </p>
+        </div>
+           
+        <a href="inicio.html">
+            <button class="botao-voltar">Voltar ao Início</button></a>
+        
+    </section>
+
+
     <section class="secao-conhecimento">
         <div class="container">
             <h2 class="titulo-secao">Áreas de Conhecimento</h2>
@@ -119,40 +93,56 @@
         </div>
     </section>
 
-    <section class="secao-recursos">
+
+
+    <section class="secao-busca">
         <div class="container">
-            <h2 class="titulo-secao">Recursos Interativos</h2>
-            
-            <div class="grade-cartoes">
-                <div class="cartao-recurso">
-                    <div class="icone-recurso">📝</div>
-                    <h3 class="titulo-recurso">Quizzes</h3>
-                    <p class="descricao-recurso">
-                        Testes interativos para avaliar seu conhecimento
-                    </p>
-                    <button class="botao-link">Acessar</button>
-                </div>
+            <h2 class="titulo-secao">Buscar Conteúdos</h2>
+            <div class="campo-busca">
+                <input type="text" placeholder="Digite para buscar..." class="input-busca">
+            </div>
+        </div>
+    </section>
 
-                <div class="cartao-recurso">
-                    <div class="icone-recurso">📄</div>
-                    <h3 class="titulo-recurso">Exercícios Práticos</h3>
-                    <p class="descricao-recurso">
-                        Atividades mão na massa para fixar o aprendizado
-                    </p>
-                    <button class="botao-link">Acessar</button>
-                </div>
 
-                <div class="cartao-recurso">
-                    <div class="icone-recurso">🎥</div>
-                    <h3 class="titulo-recurso">Conteúdos</h3>
-                    <p class="descricao-recurso">
-                        Videoaulas explicativas e demonstrações práticas
-                    </p>
-                    <button class="botao-link">Acessar</button>
+ <section class="secao-quizzes">
+        <div class="container">
+            <h2 class="titulo-secao">Quizzes Mais Vistos</h2>
+            <div class="lista-Quizzes">
+                <div class="item-Quizz">
+                    <div class="icone-Quizz">
+                        <img src="/src/img/ideas.png" alt="ideas" style="width: 50px;">
+                    </div>
+                    <span>Quizz</span>
+                </div>
+                <div class="item-Quizz">
+                    <div class="icone-Quizz">
+                         <img src="/src/img/ideas.png" alt="ideas" style="width: 50px;">
+                    </div>
+                    <span>Quizz</span>
+                </div>
+                <div class="item-Quizz">
+                    <div class="icone-Quizz">
+                         <img src="/src/img/ideas.png" alt="ideas" style="width: 50px;">
+                    </div>
+                    <span>Quizz</span>
+                </div>
+                <div class="item-Quizz">
+                    <div class="icone-Quizz">
+                        <img src="/src/img/ideas.png" alt="ideas" style="width: 50px;">
+                    </div>
+                    <span>quizz</span>
+                </div>
+                <div class="item-Quizz">
+                    <div class="icone-Quizz">
+                         <img src="/src/img/ideas.png" alt="ideas" style="width: 50px;">
+                    </div>
+                    <span>Quizz</span>
                 </div>
             </div>
         </div>
     </section>
+
 
     
    <footer class="rodape">
@@ -178,5 +168,23 @@
             </div>
         </div>
     </footer>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
