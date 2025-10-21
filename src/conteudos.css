@@ -65,8 +65,8 @@ body {
     background: linear-gradient(135deg, #1201ff 0%, #3400ac 50%, #a855f7 100%);
   color: #ffffff;
   padding: 5rem 1.5rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
   text-align: center;
 }
 
@@ -139,7 +139,7 @@ body {
 .grade-cartoes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  gap: 1.rem;
 }
 
 .cartao {
@@ -236,7 +236,7 @@ body {
 
 .cartao-categoria {
   border-radius: 1rem;
-  padding: 1.3rem 2rem;
+  padding: 1.3rem 1rem;
   text-align: center;
   color: #ffffff;
   cursor: pointer;
