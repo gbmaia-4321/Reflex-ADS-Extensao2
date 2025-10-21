@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
 }
 
@@ -45,11 +45,17 @@ span {
   max-width: 500px;
 }
 
-.cadastro, .login {
+.cadastro,
+.login {
   padding: 40px;
 }
 
-.cadastro h2, .login h2 {
+#informRecuperarSenha {
+  color: black;
+}
+
+.cadastro h2,
+.login h2 {
   color: #333;
   text-align: center;
   margin-bottom: 30px;
@@ -58,8 +64,9 @@ span {
   position: relative;
 }
 
-.cadastro h2:after, .login h2:after {
-  content: '';
+.cadastro h2:after,
+.login h2:after {
+  content: "";
   display: block;
   width: 60px;
   height: 4px;
@@ -73,7 +80,8 @@ span {
   position: relative;
 }
 
-.cadastro label, .login label {
+.cadastro label,
+.login label {
   display: block;
   margin-bottom: 8px;
   font-weight: 500;
@@ -81,7 +89,8 @@ span {
   font-size: 14px;
 }
 
-.cadastro input, .login input {
+.cadastro input,
+.login input {
   width: 100%;
   padding: 12px 15px;
   border: 2px solid #e1e1e1;
@@ -91,7 +100,8 @@ span {
   background-color: #f9f9f9;
 }
 
-.cadastro input:focus, .login input:focus {
+.cadastro input:focus,
+.login input:focus {
   border-color: #6a11cb;
   background-color: white;
   box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
@@ -104,7 +114,9 @@ span {
   margin-top: 30px;
 }
 
-.buttonregister, .buttonlogin, .cinfirmlogin {
+.buttonregister,
+.buttonlogin,
+.cinfirmlogin {
   flex: 1;
   padding: 14px;
   border: none;
@@ -115,12 +127,14 @@ span {
   transition: all 0.3s ease;
 }
 
-.buttonregister, .cinfirmlogin {
+.buttonregister,
+.cinfirmlogin {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: white;
 }
 
-.buttonregister:hover, .cinfirmlogin:hover {
+.buttonregister:hover,
+.cinfirmlogin:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(106, 17, 203, 0.4);
 }
@@ -165,7 +179,8 @@ span {
 }
 
 /* SEÇÃO DESCRIÇÃO */
-.descricao-cad, .descricao-log {
+.descricao-cad,
+.descricao-log {
   width: 100%;
   max-width: 800px;
   text-align: center;
@@ -173,7 +188,8 @@ span {
   margin: 20px 0;
 }
 
-.descricao-cad h2, .descricao-log h2 {
+.descricao-cad h2,
+.descricao-log h2 {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.6;
@@ -190,7 +206,9 @@ span {
   flex-wrap: wrap;
 }
 
-.logicaProg, .matematica, .cienciasComput {
+.logicaProg,
+.matematica,
+.cienciasComput {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,21 +224,29 @@ span {
   text-align: center;
 }
 
-.logicaProg:hover, .matematica:hover, .cienciasComput:hover {
+.logicaProg:hover,
+.matematica:hover,
+.cienciasComput:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.logicaProg h2, .matematica h3, .cienciasComput h3 {
+.logicaProg h2,
+.matematica h3,
+.cienciasComput h3 {
   margin-bottom: 10px;
 }
 
-.logicaProg ul, .matematica ul, .cienciasComput ul {
+.logicaProg ul,
+.matematica ul,
+.cienciasComput ul {
   text-align: left;
   padding-left: 20px;
 }
 
-.logicaProg li, .matematica li, .cienciasComput li {
+.logicaProg li,
+.matematica li,
+.cienciasComput li {
   margin-bottom: 8px;
 }
 
@@ -277,25 +303,29 @@ span {
     flex-direction: column;
     align-items: center;
   }
-  
-  .logicaProg, .matematica, .cienciasComput {
+
+  .logicaProg,
+  .matematica,
+  .cienciasComput {
     width: 100%;
     max-width: 400px;
   }
-  
+
   .button-container {
     flex-direction: column;
   }
-  
-  .cadastro, .login {
+
+  .cadastro,
+  .login {
     padding: 30px 20px;
   }
-  
+
   h1 {
     font-size: 40px;
   }
-  
-  .descricao-cad h2, .descricao-log h2 {
+
+  .descricao-cad h2,
+  .descricao-log h2 {
     font-size: 1.2rem;
   }
 }
