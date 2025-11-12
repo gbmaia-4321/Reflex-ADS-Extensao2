@@ -100,6 +100,42 @@ span {
   background-color: #f9f9f9;
 }
 
+
+
+.button-prof-alun {
+  display: flex;
+  gap: 10px;
+}
+
+/*  */
+
+.buttonProfessor,
+.buttonAluno {
+  color: black;
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttonProfessor:hover,
+.buttonAluno:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(106, 17, 203, 0.4);
+}
+
+.buttonProfessor.ativo,
+.buttonAluno.ativo {
+  color: white;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+
+
 .cadastro input:focus,
 .login input:focus {
   border-color: #6a11cb;

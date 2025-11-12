@@ -12,6 +12,12 @@ body {
   line-height: 1.6;
 }
 
+
+
+.grade-categorias a {
+  text-decoration: none;
+}
+
 /* Added container class for consistent layout */
 .container {
   max-width: 1152px;
@@ -58,6 +64,51 @@ body {
 .navegacao a.ativo {
   color: #111827;
   font-weight: 600;
+}
+
+.container-navegacao {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.conteudo-navegacao {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.menu-navegacao {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menu-navegacao a {
+  color: #374151;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.menu-navegacao a:hover,
+.menu-navegacao a.ativo {
+  color: #111827;
+  font-weight: 600;
+}
+
+
+.perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Hero Section */

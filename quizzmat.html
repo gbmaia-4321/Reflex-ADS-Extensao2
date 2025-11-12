@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +11,35 @@
 
 <body>
     <header class="cabecalho">
-        <div class="container-fluid">
-            <div class="cabecalho-conteudo">
+        <nav class="container-navegacao">
+            <div class="conteudo-navegacao">
                 <div class="logo">Reflex ADS</div>
-                <nav class="navegacao">
-                    <a href="index.html">Início</a>
-                    <a href="conteudos.html">Conteúdos</a>
-                    <a href="quizzes.html" class="ativo">Quizzes</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Contato</a>
-                </nav>
+                <ul class="menu-navegacao">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="conteudos.html" class="ativo">Conteúdos</a></li>
+                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <div class="perfil">
+                    <img src="/src/img/perfil-de-usuario.png" alt="perfil-de-usuario"
+                        style="width: 60px; height: 60px;">
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <section class="heroi">
         <div class="container">
             <h1 class="heroi-titulo">Quizzes <span class="destaque-amarelo">Matemática</span></h1>
             <p class="heroi-subtitulo">
-                Desafie-se na matemática! Teste seus conhecimentos com quizzes interativos, do básico ao avançado, e evolua a cada fase.</strong>.
+                Desafie-se na matemática! Teste seus conhecimentos com quizzes interativos, do básico ao avançado, e
+                evolua a cada fase.</strong>.
             </p>
         </div>
 
-            <button class="botao-comecar">Começar Agora</button>
-            <a href="index.html">
+        <button class="botao-comecar">Começar Agora</button>
+        <a href="index.html">
             <button class="botao-voltar">Voltar ao Início</button></a>
 
     </section>
@@ -74,7 +80,7 @@
                         </div>
 
                         <a href="quiz-conj-num.html">
-                        <button class="btn-start">Iniciar</button></a>
+                            <button class="btn-start">Iniciar</button></a>
                     </div>
                 </div>
 
@@ -147,7 +153,7 @@
         </div>
     </div>
 
-      <footer class="rodape">
+    <footer class="rodape">
         <div class="container">
             <div class="rodape-conteudo">
                 <div class="rodape-coluna">
@@ -172,4 +178,5 @@
     </footer>
 
 </body>
+
 </html>
