@@ -21,4 +21,9 @@ botaoAluno.addEventListener('click', function () {
     this.classList.add('ativo');
     botaoProfessor.classList.remove('ativo');
   }
+
+  
+
+
+
 });

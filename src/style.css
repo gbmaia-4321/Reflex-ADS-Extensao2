@@ -146,14 +146,32 @@ span {
 
 .button-container {
   display: flex;
-  gap: 15px;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
+}
+
+.buttonslogin {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .buttonregister,
 .buttonlogin,
-.cinfirmlogin {
+.cinfirmlogin,
+.criarconta {
   flex: 1;
+
+  width: 180px;
+  height: 40px;
+
   padding: 14px;
   border: none;
   border-radius: 8px;
@@ -164,13 +182,15 @@ span {
 }
 
 .buttonregister,
-.cinfirmlogin {
+.cinfirmlogin,
+.criarconta {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: white;
 }
 
 .buttonregister:hover,
-.cinfirmlogin:hover {
+.cinfirmlogin:hover,
+.criarconta:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(106, 17, 203, 0.4);
 }
