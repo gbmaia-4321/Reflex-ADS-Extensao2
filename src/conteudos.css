@@ -29,6 +29,9 @@ body {
 .cabecalho {
   background-color: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 /* Updated header content structure */
@@ -111,35 +114,37 @@ body {
   justify-content: center;
 }
 
-/* Hero Section */
-.heroi {
+/* Hero Section - padronizado */
+.heroi,
+.hero {
   background: linear-gradient(135deg, #1201ff 0%, #3400ac 50%, #a855f7 100%);
   color: #ffffff;
   padding: 5rem 1.5rem;
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   text-align: center;
 }
 
-/* Updated hero title styles */
-.heroi-titulo {
+.conteudo-heroi {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.heroi-titulo,
+.titulo-heroi {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
-.destaque {
+.destaque,
+.destaque-amarelo {
   color: #fde047;
 }
 
-/* Added yellow highlight variant */
-.destaque-amarelo {
-  color: #fbbf24;
-}
-
-/* Updated hero subtitle styles */
-.heroi-subtitulo {
+.heroi-subtitulo,
+.descricao-heroi {
   font-size: 1.125rem;
   margin-bottom: 2rem;
   line-height: 1.75;

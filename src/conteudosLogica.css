@@ -23,6 +23,9 @@ body {
 .cabecalho {
   background-color: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 /* Updated header content structure */
@@ -128,7 +131,8 @@ body {
 }
 
 
-/* Seção Hero (menor para quiz) */
+/* Seção Hero (padronizado) */
+.heroi,
 .hero {
   background: linear-gradient(135deg, #1201ff 0%, #3400ac 50%, #a855f7 100%);
   color: #ffffff;
@@ -136,6 +140,31 @@ body {
   padding-top: 8rem;
   padding-bottom: 8rem;
   text-align: center;
+}
+
+.conteudo-heroi {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.heroi-titulo,
+.titulo-heroi,
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.heroi-subtitulo,
+.descricao-heroi,
+.hero p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  line-height: 1.75;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .calculator-icon {

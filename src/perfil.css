@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Cabeçalho (padronizado) */
+.cabecalho {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container-navegacao {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+
+.conteudo-navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.menu-navegacao {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.menu-navegacao a {
+    color: #374151;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+}
+
+.menu-navegacao a:hover,
+.menu-navegacao a.ativo {
+    color: #111827;
+    font-weight: 600;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container base */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Seção Perfil */
+.secao-perfil {
+    background: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 100%);
+    padding: 3rem 2rem;
+    color: #ffffff;
+}
+
+.container-perfil {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.perfil-conteudo {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.dados-usuario {
+    flex: 1;
+}
+
+.campo-grupo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.campo input {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+}
+
+.nome-usuario {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.botao-alterar {
+    background-color: transparent;
+    color: #00d4ff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: opacity 0.3s;
+}
+
+.botao-alterar:hover {
+    opacity: 0.8;
+}
+
+/* Seção Progresso */
+.secao-progresso {
+    padding: 2rem;
+    background-color: #ffffff;
+    margin: 2rem 0;
+}
+
+.card-progresso {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.cabecalho-progresso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.cabecalho-progresso h3 {
+    font-size: 1.125rem;
+    color: #1a1a1a;
+    margin-bottom: 0.25rem;
+}
+
+.cabecalho-progresso p {
+    font-size: 0.875rem;
+    color: #999;
+}
+
+.icone-trofeu {
+    font-size: 2rem;
+}
+
+.barra-progresso {
+    width: 100%;
+    height: 12px;
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barra-preenchida {
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+    border-radius: 10px;
+    transition: width 0.3s;
+}
+
+/* Seção Módulos */
+.secao-modulos {
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+.secao-modulos h2 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.grade-modulos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.card-modulo {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    transition: all 0.3s;
+}
+
+.card-modulo:hover {
+    border-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+.card-modulo h3 {
+    font-size: 1.125rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.card-modulo p {
+    color: #999;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.rodape-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tempo {
+    color: #666;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.botao-continuar {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.3s;
+}
+
+.botao-continuar:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .perfil-conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .campo-grupo {
+        grid-template-columns: 1fr;
+    }
+
+    .grade-modulos {
+        grid-template-columns: 1fr;
+    }
+
+    .navegacao {
+        gap: 1rem;
+        margin-left: 1rem;
+    }
+
+    .container-cabecalho {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+.rodape {
+  background-color: #111827;
+  color: #ffffff;
+  padding: 3rem 1.5rem 1.5rem;
+}
+
+/* Updated footer layout */
+.rodape-conteudo {
+  max-width: 1152px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rodape-coluna {
+  padding: 0.5rem;
+}
+
+.rodape-coluna h3 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.rodape-coluna p {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Added copyright section */
+.rodape-copyright {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid #374151;
+  text-align: center;
+}
+
+.rodape-copyright p {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
