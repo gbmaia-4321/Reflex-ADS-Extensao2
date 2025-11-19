@@ -146,7 +146,7 @@ span {
 
 .button-container {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -167,12 +167,9 @@ span {
 .buttonlogin,
 .cinfirmlogin,
 .criarconta {
-  flex: 1;
 
   width: 180px;
   height: 40px;
-
-  padding: 14px;
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -252,15 +249,18 @@ span {
 }
 
 /* SEÇÃO CARDS */
-.cardsinfo {
+.cardsinform {
   display: flex;
   justify-content: center;
-  padding: 5% 10%;
-  gap: 3%;
+  padding: 10% 5%;
+  gap: 30px;
+  /* GAP fixo evita que cards se encostem */
   width: 100%;
   max-width: 1200px;
   flex-wrap: wrap;
 }
+
+
 
 .logicaProg,
 .matematica,
